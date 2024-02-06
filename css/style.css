@@ -1,0 +1,17 @@
+body {
+    background-color: #2B2A33;
+}
+
+.card {
+    background-color: #89839e8a;
+    color: rgb(190, 190, 190);
+}
+
+.btn {
+    width: 120px;
+}
+
+table tr td, table tr th{
+    background-color: #89839e8a !important;
+    color: rgb(190, 190, 190) !important;;
+}
