@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GestCond - Novo Ano</title>
+    <title>GestCond - Dados do Prédio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" >
@@ -79,19 +79,82 @@
 
     <main class="container">
         <div class="row mt-5 justify-content-center">
-            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12">
+            <div class="col-xl-8 col-lg-9 col-md-10 col-sm-12">
                 <div class="card border-light">
-                    <div class="card-header">Novo Ano</div>
+                    <div class="card-header">Dados do Prédio</div>
                     <div class="card-body">
-                        <p class="card-text">Ao criar um novo ano serão criados na tabela de Quotas linhas destinadas ao registo de quotas para cada fração existente nesse ano.</p>
+                        <p class="card-text">Nesta área poderá consultar e editar os Dados do Prédio.</p>
                         <div class="col">
+                            <hr>
                             <form action="#" method="post">
-                                <hr>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">Novo Ano</span>
-                                    <input type="text" class="form-control" placeholder="Ano" aria-label="Ano" aria-describedby="novo-ano" id="txt-ano">
-                                    <button class="btn btn-outline-primary" type="button" id="btn-ano">Criar</button>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Morada do Prédio</span>
+                                            <input type="text" class="form-control" placeholder="Arruamento" aria-label="Morada do Prédio" aria-describedby="predio-morada" id="txt-predio-morada">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Código Postal e Localidade</span>
+                                            <input type="text" class="form-control" placeholder="0000-000 Localidade" aria-label="Código Postal do Prédio" aria-describedby="predio-codpostal" id="txt-predio-codpostal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-7 col-lg-9 col-md-12 col-sm-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text">NIP (N.º de Identificação do Prédio)</span>
+                                            <input type="text" class="form-control" placeholder="00000000" aria-label="NIP do Prédio" aria-describedby="predio-nip" id="txt-predio-nip">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"><div class="col"><hr></div></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="mb-3">Identificadores dos Contratos de Eletricidade e Água</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-7 col-lg-9 col-md-12 col-sm-12">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">CPE (Eletricidade)</span>
+                                            <input type="text" class="form-control" placeholder="PT00000000000000000ZZ" aria-label="CPE do Prédio" aria-describedby="predio-cpe" id="txt-predio-cpe">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-7 col-lg-9 col-md-12 col-sm-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Local de Consumo (Água)</span>
+                                            <input type="text" class="form-control" placeholder="00000" aria-label="Local de Consumo do Prédio" aria-describedby="predio-locconsumo" id="txt-predio-locconsumo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"><div class="col"><hr></div></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="mb-3">Dados do(s) Ascensor(es)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-5 col-md-6 col-sm-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Quantidade</span>
+                                            <input type="number" class="form-control" placeholder="0" aria-label="Quantidade de Ascensores" aria-describedby="predio-ascensor-qtd" id="num-predio-ascentor-qtd">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-7 col-md-6 col-sm-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text">N.º do Processo</span>
+                                            <input type="text" class="form-control" placeholder="00000" aria-label="Número do Processo dos Ascensores do Prédio" aria-describedby="predio-ascensor-processo" id="txt-predio-ascensor-processo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"><div class="col"><hr></div></div>
+                                <button class="btn btn-outline-primary" type="button" id="btn-predio">Guardar</button>
                             </form>
                         </div>
                     </div>
