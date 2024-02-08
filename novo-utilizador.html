@@ -32,7 +32,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prédio</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Dados</a></li>
+                                <li><a class="dropdown-item" href="editar-dados-predio.html">Dados</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Listar Frações</a></li>
                                 <li><a class="dropdown-item" href="#">Nova Fração</a></li>
@@ -51,6 +51,14 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Listar Despesas</a></li>
                                 <li><a class="dropdown-item" href="#">Nova Despesa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manutenção</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="listar-quotas.html">Listar Manutenções</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="novo-ano.html">Nova Manutenção</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -77,11 +85,14 @@
                     <div class="card-body">
                         <p class="card-text">Ao criar um novo utilizador para um novo representante de uma fração deverá ser disponibilizado ao condómino o username e password.</p>
                         <div class="col">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Novo Utilizador</span>
-                                <input type="text" class="form-control" placeholder="Ano" aria-label="Ano" aria-describedby="novo-ano" id="txt-ano">
-                                <button class="btn btn-outline-primary" type="button" id="btn-ano">Criar</button>
-                            </div>
+                            <form action="#" method="post">
+                                <hr>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Novo Utilizador</span>
+                                    <input type="text" class="form-control" placeholder="Ano" aria-label="Ano" aria-describedby="novo-ano" id="txt-ano">
+                                    <button class="btn btn-outline-primary" type="button" id="btn-ano">Criar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                   </div>
